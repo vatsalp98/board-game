@@ -1,113 +1,150 @@
+"use client";
+
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { Vortex } from "@/components/ui/vortex";
+import { DownloadIcon, PlayIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
+import Link from "next/link";
+
+const people = [
+  {
+    name: "Justin",
+    role: "Creative Head",
+    imageUrl: "/team/justin.jpg",
+  },
+  {
+    name: "Clement",
+    role: "Writing Head",
+    imageUrl: "/team/justin.jpg",
+  },
+  {
+    name: "Roan",
+    role: "Artistic Head",
+    imageUrl: "/team/justin.jpg",
+  },
+  {
+    name: "Joseph",
+    role: "Artistic Help",
+    imageUrl: "/team/justin.jpg",
+  },
+  {
+    name: "Vatsal",
+    role: "Technical Lead",
+    imageUrl: "/vatsaal.jpg",
+  },
+];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <MaxWidthWrapper>
+        <div className="py-40 mx-auto text-center flex flex-col items-center max-w-3xl h-screen">
+          <Vortex
+            backgroundColor="slate"
+            rangeY={800}
+            className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-[25vh]"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <section className="mt-[250px] flex flex-col items-center justify-center py-20">
+              <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
+                Welcome to{" "}
+                <span className="text-blue-600">Dungeons and Dragons</span>.
+              </h2>
+              <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
+                Roll the dice, unleash the fun!
+              </p>
+              <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
+                <Button className="gap-2">
+                  <DownloadIcon />
+                  Download Board
+                </Button>
+                <Button variant={"outline"} className="gap-2">
+                  <PlayIcon />
+                  Watch Trailer
+                </Button>
+              </div>
+            </section>
+          </Vortex>
         </div>
-      </div>
+      </MaxWidthWrapper>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="w-full py-8 md:py-14 border-t border-b">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-2 text-center">
+            <div className="space-y-2 mb-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl/none">
+                One Board.
+                <span className="text-blue-600"> Endless possibilities</span>.
+              </h2>
+              <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                A board game that will stimulate all your senses.
+              </p>
+            </div>
+            <div className="flex flex-col gap-1 min-[400px] w-full mt-2">
+              <div className="mx-auto">
+                <Link
+                  className={buttonVariants({
+                    className: "font-semibold text-lg",
+                    size: "lg",
+                  })}
+                  href={{
+                    pathname: "/profile",
+                    query: {
+                      tab: "subscription",
+                    },
+                  }}
+                >
+                  View Rules &rarr;
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      <section
+        id="open-source"
+        className="container space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 pb-10 text-center">
+          <h2 className="text-3xl font-bold leading-[1.1] tracking-tight text-black dark:text-white sm:text-3xl md:text-6xl">
+            Created by <span className="text-blue-600">students</span>.
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+          <p className="max-w-[85%] font-semibold leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            Unleash your imagination and embark on an unforgettable journey with
+            this exciting board game, meticulously designed and developed by
+            talented students in the IAT 210 class.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        </div>
+        <div className="flex w-full items-center justify-center">
+          <ul
+            role="list"
+            className="grid gap-x-16 gap-y-12 sm:grid-cols-2 md:grid-cols-5 sm:gap-y-16 xl:col-span-2"
+          >
+            {people.map((person) => (
+              <li key={person.name}>
+                <div className="flex items-center gap-x-6">
+                  <Image
+                    width={100}
+                    height={100}
+                    className="h-16 w-16 rounded-full"
+                    src={person.imageUrl}
+                    alt=""
+                  />
+                  <div>
+                    <h3 className="text-base font-semibold leading-7 tracking-tight ">
+                      {person.name}
+                    </h3>
+                    <p className="text-sm font-semibold leading-6 text-indigo-600">
+                      {person.role}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </>
   );
 }
