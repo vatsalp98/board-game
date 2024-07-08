@@ -2,6 +2,7 @@
 
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { Spotlight } from "@/components/ui/spotlight";
 import { Vortex } from "@/components/ui/vortex";
 import { DownloadIcon, PlayIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
@@ -46,18 +47,23 @@ export default function Home() {
             className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-[25vh]"
           >
             <section className="mt-[250px] flex flex-col items-center justify-center py-20">
-              <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
-                Welcome to{" "}
-                <span className="text-blue-600">Dungeons and Dragons</span>.
+              <h2 className="text-white text-4xl md:text-6xl font-bold text-center">
+                The Royal Ascension
               </h2>
               <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-                Roll the dice, unleash the fun!
+                Where strategy, alliances, and cunning will lead you to the
+                throne!
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-                <Button className="gap-2">
-                  <DownloadIcon />
-                  Download Board
-                </Button>
+                <Link href={"/board.pdf"} target="_blank">
+                  <Button className="gap-2">
+                    <DownloadIcon />
+                    Download Board
+                  </Button>
+                </Link>
+                <Link href={"/rules"}>
+                  <Button variant={"outline"}>View Rules</Button>
+                </Link>
                 <Button variant={"outline"} className="gap-2">
                   <PlayIcon />
                   Watch Trailer
@@ -68,7 +74,7 @@ export default function Home() {
         </div>
       </MaxWidthWrapper>
 
-      <section className="w-full py-8 md:py-14 border-t border-b">
+      {/* <section className="w-full py-8 md:py-14 border-t border-b">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-2 text-center">
             <div className="space-y-2 mb-2">
@@ -88,7 +94,7 @@ export default function Home() {
                     size: "lg",
                   })}
                   href={{
-                    pathname: "/profile",
+                    pathname: "/rules",
                     query: {
                       tab: "subscription",
                     },
@@ -100,7 +106,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section
         id="open-source"
