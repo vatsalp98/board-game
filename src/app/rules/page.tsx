@@ -23,21 +23,30 @@ export default function RulesPage() {
           </Button>
         </div>
         <div className="flex flex-row items-center justify-center w-full my-8 text-justify">
-          <h3 className="text-3xl font-semibold">Gameplay rules and play</h3>
+          <h3 className="text-3xl font-semibold">
+            <span className="underline">Rule Book</span>
+          </h3>
         </div>
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Introduction</h2>
-          <span className="">
-            Welcome to &quot;The Royal Ascension&quot; a strategic board game
-            set in an ancient kingdom where territories fight for control of the
-            land. Players must navigate through political intrigue, battles, and
-            alliances to expand their territories and gain influence. The victor
-            shall etch their name in the history books and ascend to the throne.
-          </span>
+          <h2 className="font-semibold mb-2 text-xl ">
+            <span className="underline">Introduction</span>👋
+          </h2>
+          <ul className="list-disc list-inside px-6">
+            <li>
+              Welcome to &quot;The Royal Ascension&quot; a strategic board game
+              set in an ancient kingdom where territories fight for control of
+              the land. Players must navigate through political intrigue,
+              battles, and alliances to expand their territories and gain
+              influence. The victor shall etch their name in the history books
+              and ascend to the throne.
+            </li>
+          </ul>
         </div>
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Game Overview 📖</h2>
-          <ul className="list-disc list-inside">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Game Overview</span> 📖
+          </h2>
+          <ul className="list-disc list-inside px-6">
             <li className="">
               Each territory will have a value attached to it to defend their
               land.{" "}
@@ -63,8 +72,10 @@ export default function RulesPage() {
           </ul>
         </div>
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Territories 🗺️</h2>
-          <ul className="list-disc list-inside">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Territories</span> 🗺️
+          </h2>
+          <ul className="list-decimal list-inside px-6">
             <li>
               <strong>Jiggy Jungle: </strong>13 points
             </li>
@@ -104,12 +115,14 @@ export default function RulesPage() {
           </ul>
         </div>
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Components 🛠️</h2>
-          <ul className="list-disc list-inside">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Game Components</span> 🛠️
+          </h2>
+          <ul className="list-disc list-inside px-6">
             <li className="">1 Game board</li>
             <li>
               4 Character Tokens
-              <ul className="list-disc list-inside px-8">
+              <ul className="list-square list-inside px-8">
                 <li>King Eadric the Wise </li>
                 <li>Lady Seraphina Von Eldora</li>
                 <li>Sir Thaddeus Blondewood</li>
@@ -128,8 +141,10 @@ export default function RulesPage() {
           </ul>
         </div>
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Setup ⚙️</h2>
-          <ul className="list-decimal list-inside gap-2 flex flex-col">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Setting up the Game</span> ⚙️
+          </h2>
+          <ul className="list-decimal list-inside gap-2 flex flex-col px-6">
             <li className="">
               <strong>Place Tokens: </strong>Place the character tokens in their
               designated &quot;home&quot; space on the board (This will be the
@@ -165,8 +180,10 @@ export default function RulesPage() {
           </ul>
         </div>
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Basic Gameplay 🎲</h2>
-          <ul className="list-decimal list-inside gap-2 flex flex-col">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Basic Gameplay</span> 🎲
+          </h2>
+          <ul className="list-decimal list-inside gap-2 flex flex-col px-6">
             <li>
               <strong>Turn Order: </strong>The players will then begin the game
               in order of territory selection, going clockwise (the player that
@@ -184,7 +201,7 @@ export default function RulesPage() {
               space, they draw a suite card from that space&apos;s suite (each
               card drawn will represent the number of the card drawn of that
               value):
-              <ul className="list-disc list-inside px-6">
+              <ul className="list-square list-inside px-6">
                 <li>
                   <strong>Hearts: </strong> Health/ armor (When players collect
                   health cards, the additional points of strength are added to
@@ -218,8 +235,10 @@ export default function RulesPage() {
         </div>
 
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Action Cards ♠️</h2>
-          <ul className="list-decimal list-inside gap-2 flex flex-col">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Action Cards</span> ♠️
+          </h2>
+          <ul className="list-decimal list-inside gap-2 flex flex-col px-6">
             <li className="">
               <strong>Drawing Action Cards: </strong> Drawn when a player lands
               on spades.
@@ -239,8 +258,11 @@ export default function RulesPage() {
                   wins all the territories or loses all their territories from
                   their opponents during battle)
                   <br />
-                  <span className="px-6 font-semibold italic">
-                    i- Jacks of Spades (2 in the deck)
+                  <span className="px-10 font-semibold italic">
+                    ▪{" "}
+                    <span className="ml-2">
+                      Jacks of Spades (2 in the deck)
+                    </span>
                   </span>
                 </li>
                 <li>
@@ -249,8 +271,11 @@ export default function RulesPage() {
                   each of the losers) (Once the exchange is made each of the
                   losers will choose at random one health card to remove from
                   the winners’ kingdom) <br />
-                  <span className="px-6 font-semibold italic">
-                    i- King of Spades and Queen of Spades (4 in the deck)
+                  <span className="px-8 font-semibold italic">
+                    ▪{" "}
+                    <span className="ml-2">
+                      King of Spades and Queen of Spades (4 in the deck)
+                    </span>
                   </span>
                 </li>
                 <li>
@@ -263,8 +288,11 @@ export default function RulesPage() {
                   friendly territory in the game) (Once the alliance is used up
                   the player will discard the card.)
                   <br />
-                  <span className="px-6 font-semibold italic">
-                    i- 3,4,5,6 of Spades (8 in the deck)
+                  <span className="px-8 font-semibold italic">
+                    ▪{" "}
+                    <span className="ml-2">
+                      3,4,5,6 of Spades (8 in the deck)
+                    </span>
                   </span>
                 </li>
                 <li>
@@ -274,8 +302,11 @@ export default function RulesPage() {
                   (Players may choose whether they want to draw from Hearts or
                   Diamonds to gain additional resources)
                   <br />
-                  <span className="px-6 font-semibold italic">
-                    i- 7,8,9,10 of Spades (8 in the deck)
+                  <span className="px-8 font-semibold italic">
+                    ▪{" "}
+                    <span className="ml-2">
+                      7,8,9,10 of Spades (8 in the deck)
+                    </span>
                   </span>
                 </li>
                 <li>
@@ -283,8 +314,11 @@ export default function RulesPage() {
                   points to the player’s upcoming battle due to unexpected
                   plague.
                   <br />
-                  <span className="px-6 font-semibold italic">
-                    i- Ace of Spades and 2 of Spades (4 in the deck)
+                  <span className="px-8 font-semibold italic">
+                    ▪{" "}
+                    <span className="ml-2">
+                      Ace of Spades and 2 of Spades (4 in the deck)
+                    </span>
                   </span>
                 </li>
               </ul>
@@ -293,8 +327,10 @@ export default function RulesPage() {
         </div>
 
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Battles ⚔️</h2>
-          <ul className="list-decimal list-inside gap-2 flex flex-col">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Battles</span> ⚔️
+          </h2>
+          <ul className="list-decimal list-inside gap-2 flex flex-col px-6">
             <li className="">
               <strong>Initiating Battles: </strong>Battles are initiated when a
               player lands on spades and after the action card is drawn.
@@ -338,7 +374,7 @@ export default function RulesPage() {
               <strong>Battle Repetition: </strong> The same player that has lost
               in the previous battle cannot battle back-to-back to allow for
               fairness.
-              <ul className="list-disc list-inside px-6">
+              <ul className="list-square list-inside px-6">
                 <li>
                   When a “Royal Decree” is used, the above rule is voided, all
                   players will partake in the battle. Following that, all
@@ -350,30 +386,17 @@ export default function RulesPage() {
           </ul>
         </div>
 
-        {/* <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Special Rules 🩵</h2>
-          <ul className="list-decimal list-inside gap-2 flex flex-col">
-            <li className="">
-              <strong>Alliances: </strong>Players can use their action cards to
-              form temporary alliances to combine resources and strategize
-              against stronger opponents.
-            </li>
-            <li>
-              <strong>Resource Trading: </strong>Players can trade resources
-              with each other when located in a specific region/land.
-            </li>
-          </ul>
-        </div> */}
-
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Board Layout 📜</h2>
-          <ul className="list-disc  list-inside gap-2 flex flex-col">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Board Layout</span> 📜
+          </h2>
+          <ul className="list-disc  list-inside gap-2 flex flex-col px-6">
             <li className="">
               <strong>Regions: </strong>Each space corresponds to a suite
               (Hearts, Diamonds, Spades, and 2 shops) and contains suite cards
               (except the shop). Please refer to the Suite Card definitions
               under “Basic Gameplay” for a basic overview.
-              <ul className="list-disc px-10">
+              <ul className="list-square px-10">
                 <li>35 Spots total</li>
                 <li>With 2 shops on the map.</li>
               </ul>
@@ -385,7 +408,7 @@ export default function RulesPage() {
             </li>
             <li>
               <strong>Weapon choices: </strong>
-              <ul className="list-disc px-10">
+              <ul className="list-square px-10">
                 <li>
                   Weapon buffs will be equivalent to the number associated on
                   the card. (Ex. 5 of Clubs will be equal to +5 strength).
@@ -394,7 +417,7 @@ export default function RulesPage() {
             </li>
             <li>
               <strong>Purchasing Weapons with Gold: </strong>
-              <ul className="list-disc px-10">
+              <ul className="list-square px-10">
                 <li>
                   The value of these weapons will be equal to the number on the
                   card and can be purchased at that price. (Ex. 7 Clubs can be
@@ -411,8 +434,10 @@ export default function RulesPage() {
         </div>
 
         <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Winning the Game 👑</h2>
-          <ul className="list-decimal list-inside gap-2 flex flex-col">
+          <h2 className="font-semibold mb-2 text-xl">
+            <span className="underline">Winning the Game</span> 👑
+          </h2>
+          <ul className="list-disc list-inside gap-2 flex flex-col px-6">
             <li className="">
               <strong>Eliminated Players: </strong> If a player loses all their
               territories, then they are eliminated from the game and must
@@ -436,9 +461,9 @@ export default function RulesPage() {
 
         <div className="mb-8">
           <h2 className="font-semibold mb-2 text-xl">
-            Play Session Duration 🕰️
+            <span className="underline">Play Session Duration</span> 🕰️
           </h2>
-          <ul className="list-disc  list-inside gap-2 flex flex-col">
+          <ul className="list-disc  list-inside gap-2 flex flex-col px-6">
             <li className="">
               <strong>Typical Session: </strong>A typical play session will last
               between 60 to 90 minutes.
@@ -446,185 +471,18 @@ export default function RulesPage() {
             <li>
               <strong>Variation: </strong>Length can vary depending on the
               number of players and strategies employed.
-              <ul className="px-10 list-disc">
+              <ul className="px-10 list-square">
                 <li>3 - 4 players</li>
               </ul>
             </li>
           </ul>
         </div>
 
-        {/* <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Glossary 📃</h2>
-          <ul className="list-disc  list-inside gap-2 flex flex-col">
-            <li className="">
-              <strong>Gold: </strong>Used to buy troops, fortify armies, or buy
-              armies.
-            </li>
-            <li>
-              <strong>Troops: </strong>Used for battles or defending
-              territories.
-            </li>
-            <li>
-              <strong>Suite cards: </strong>Cards corresponding to Hearts,
-              Diamonds, Clubs and Spades, each with a specific game function.
-            </li>
-            <li>
-              <strong>Action cards: </strong>Cards that triggers events,
-              challenges, or opportunities in the game.
-            </li>
-          </ul>
-        </div> */}
-
         <div className="text-center font-semibold text-xl italic mb-14 mt-10">
           <h2>
             Enjoy your journey in &quot;The Royal Ascension&quot; where
             strategy, alliances, and cunning will lead you to the throne!
           </h2>
-        </div>
-
-        <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">
-            Step 1: Define the Primary Mechanics
-          </h2>
-          <span>
-            Identify the main elements and rules of your game. For &quot;The
-            Royal Ascension&quot; these could include:{" "}
-          </span>
-          <ul className="list-decimal list-inside gap-2 flex flex-col px-8 mt-2">
-            <li className="">Turn Order</li>
-            <li>Movement</li>
-            <li>Combat</li>
-            <li>Resource Managment</li>
-            <li>Random Events</li>
-            <li>Winning Conditions</li>
-          </ul>
-        </div>
-
-        <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">
-            Step 2: Break down each Mechanics
-          </h2>
-          <span>
-            Detail the processes and decisions involved in each mechanic.
-          </span>
-        </div>
-
-        <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">
-            Step 3: Create the Flowcharts
-          </h2>
-          <span>
-            Using a flowchart tool (such as Lucidchart, draw.io, or any other
-            diagramming tool), create individual flowcharts for each mechanic.
-          </span>
-        </div>
-
-        <div className="mb-8">
-          <h2 className="font-semibold mb-2 text-xl">Example Flowcharts</h2>
-          <ul className="list-decimal list-inside px-4">
-            <li>Turn Order</li>
-            <ul className="list-disc list-inside px-8">
-              <li>Start Turn</li>
-              <li className="">
-                Draw Event Card
-                <ul className="px-6">
-                  <li>- If Special Event, follow event instructions</li>
-                </ul>
-              </li>
-              <li className="">
-                Player Actions
-                <ul className="px-6">
-                  <li>- Move</li>
-                  <li>- Trade</li>
-                  <li>- Attack</li>
-                  <li>- Build</li>
-                </ul>
-              </li>
-              <li className="">
-                End Turn
-                <ul className="px-6">
-                  <li>- Pass turn to next player.</li>
-                </ul>
-              </li>
-            </ul>
-
-            <li>Movement</li>
-            <ul className="list-disc list-inside px-8">
-              <li>Select Character</li>
-              <li className="">
-                Determine Movement Range
-                <ul className="px-6">
-                  <li>- Roll dice</li>
-                  <li>- Check abilities</li>
-                </ul>
-              </li>
-              <li className="">
-                Move Character
-                <ul className="px-6">
-                  <li>- Follow path on the board</li>
-                  <li>- Encounter obstacles or opponents</li>
-                </ul>
-              </li>
-              <li className="">
-                Check for Events
-                <ul className="px-6">
-                  <li>- Random Event</li>
-                  <li>- Battle</li>
-                </ul>
-              </li>
-            </ul>
-
-            <li>Combat</li>
-            <ul className="list-disc list-inside px-8">
-              <li>
-                Initiate Combat
-                <ul className="px-6">
-                  <li>- Choose opponent</li>
-                </ul>
-              </li>
-              <li className="">
-                Roll for Attack
-                <ul className="px-6">
-                  <li>- Calculate attack points.</li>
-                </ul>
-              </li>
-              <li className="">
-                Opponent Defense
-                <ul className="px-6">
-                  <li>- Roll for defense</li>
-                </ul>
-              </li>
-              <li className="">
-                Resolve Outcomes
-                <ul className="px-6">
-                  <li>- Damage calculation</li>
-                  <li>- Defeat or retreat</li>
-                </ul>
-              </li>
-            </ul>
-
-            <li>Resource Managment</li>
-            <ul className="list-disc list-inside px-8">
-              <li>
-                Collect Resources
-                <ul className="px-6">
-                  <li>- From territories, cards, trades</li>
-                </ul>
-              </li>
-              <li className="">
-                Manage Inventory
-                <ul className="px-6">
-                  <li>- Use, trade, or store resources.</li>
-                </ul>
-              </li>
-              <li className="">
-                Allocate Resources
-                <ul className="px-6">
-                  <li>- Building, upgrading, training units.</li>
-                </ul>
-              </li>
-            </ul>
-          </ul>
         </div>
       </MaxWidthWrapper>
     </>

@@ -55,7 +55,7 @@ export default function Home() {
                 throne!
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-                <Link href={"/board.pdf"} target="_blank">
+                <Link href={"/board"}>
                   <Button className="gap-2">
                     <DownloadIcon />
                     Download Board

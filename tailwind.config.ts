@@ -10,6 +10,11 @@ const config = {
   ],
   prefix: "",
   theme: {
+    listStyleType: {
+      square: "square",
+      disc: "disc",
+      decimal: "decimal",
+    },
     container: {
       center: true,
       padding: "2rem",
