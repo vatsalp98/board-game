@@ -96,10 +96,11 @@ export default function Home() {
                         Here is a small trailer introducing our board game.
                       </DialogDescription>
                     </DialogHeader>
-                    <div className="py-4">
-                      <video width={520} height={240} controls preload="none">
-                        <source src="/trailer.mp4" type="video/mp4" />
-                      </video>
+                    <div className="py-4 relative">
+                      <iframe
+                        src="https://www.youtube.com/embed/IdWoTVZqQzE"
+                        className="w-full fill h-[600px]"
+                      />
                     </div>
                   </DialogContent>
                 </Dialog>
