@@ -12,7 +12,11 @@ import {
 } from "@/components/ui/dialog";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Vortex } from "@/components/ui/vortex";
-import { DownloadIcon, PlayIcon } from "@radix-ui/react-icons";
+import {
+  DownloadIcon,
+  PlayIcon,
+  QuestionMarkIcon,
+} from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,27 +24,27 @@ const people = [
   {
     name: "Justin",
     role: "Creative Head",
-    imageUrl: "/team/justin.jpg",
+    imageUrl: "/char-1.jpg",
   },
   {
     name: "Clement",
     role: "Writing Head",
-    imageUrl: "/team/justin.jpg",
+    imageUrl: "/char-2.jpg",
   },
   {
     name: "Roan",
     role: "Artistic Head",
-    imageUrl: "/team/justin.jpg",
+    imageUrl: "/char-3.jpg",
   },
   {
     name: "Joseph",
     role: "Artistic Help",
-    imageUrl: "/team/justin.jpg",
+    imageUrl: "/char-4.jpg",
   },
   {
     name: "Vatsal",
     role: "Technical Lead",
-    imageUrl: "/vatsaal.jpg",
+    imageUrl: "/char-2.jpg",
   },
 ];
 
@@ -64,18 +68,21 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
                 <Link href={"/board"}>
-                  <Button className="gap-2">
+                  <Button className="gap-2" variant={"secondary"}>
                     <DownloadIcon />
-                    Download Board
+                    Game Components
                   </Button>
                 </Link>
                 <Link href={"/rules"}>
-                  <Button variant={"outline"}>View Rules</Button>
+                  <Button variant={"secondary"} className="gap-2">
+                    <QuestionMarkIcon />
+                    Rulebook
+                  </Button>
                 </Link>
                 <Dialog>
                   <DialogTrigger
                     className={buttonVariants({
-                      variant: "outline",
+                      variant: "secondary",
                       className: "gap-2",
                     })}
                   >
@@ -153,7 +160,7 @@ export default function Home() {
         <div className="flex w-full items-center justify-center">
           <ul
             role="list"
-            className="grid gap-x-16 gap-y-12 sm:grid-cols-2 md:grid-cols-5 sm:gap-y-16 xl:col-span-2"
+            className="grid gap-x-16 gap-y-12 sm:grid-cols-2 md:grid-cols-3 sm:gap-y-16 xl:col-span-2"
           >
             {people.map((person) => (
               <li key={person.name}>
