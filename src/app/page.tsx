@@ -2,6 +2,14 @@
 
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Vortex } from "@/components/ui/vortex";
 import { DownloadIcon, PlayIcon } from "@radix-ui/react-icons";
@@ -64,10 +72,30 @@ export default function Home() {
                 <Link href={"/rules"}>
                   <Button variant={"outline"}>View Rules</Button>
                 </Link>
-                <Button variant={"outline"} className="gap-2">
-                  <PlayIcon />
-                  Watch Trailer
-                </Button>
+                <Dialog>
+                  <DialogTrigger
+                    className={buttonVariants({
+                      variant: "outline",
+                      className: "gap-2",
+                    })}
+                  >
+                    <PlayIcon />
+                    Watch Trailer
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Royal Ascension Trailer</DialogTitle>
+                      <DialogDescription>
+                        Here is a small trailer introducing our board game.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <div className="py-4">
+                      <video width={520} height={240} controls preload="none">
+                        <source src="/trailer.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
             </section>
           </Vortex>
