@@ -32,7 +32,7 @@ export default function RulesPage() {
             <span className="underline">Introduction</span>👋
           </h2>
           <ul className="list-disc list-inside px-6">
-            <li>
+            <li className="indent">
               Welcome to &quot;The Royal Ascension&quot; a strategic board game
               set in an ancient kingdom where territories fight for control of
               the land. Players must navigate through political intrigue,
@@ -55,7 +55,7 @@ export default function RulesPage() {
               Card values will take the form of the number designated (Ex. Queen
               of hearts = 12 health points, 6 of Diamonds = 6 gold){" "}
             </li>
-            <li>
+            <li className="list-item">
               Dice roll in the battle will signify the tactical advantage of
               territories over others (higher dice roll adds to territories’
               total power, making it better tactically)
@@ -450,11 +450,16 @@ export default function RulesPage() {
               many kingdoms as possible. This is done by winning battles against
               other players and taking territories.
               <br />
-              <span className="px-10">
+              {/* <span className="px-10">
                 <strong>a- Claiming the Throne: </strong>The game ends once a
                 player has attained the majority of kingdoms in the realm. (7
                 Kingdoms out of 12)
-              </span>
+              </span> */}
+            </li>
+            <li>
+              <strong>Claiming the throne:</strong> The game ends once a player
+              has attained the majority of kingdoms in the realm. (7 Kingdoms
+              out of 12).
             </li>
           </ul>
         </div>
