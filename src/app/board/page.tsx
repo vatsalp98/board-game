@@ -108,6 +108,35 @@ export default function BoardPage() {
             </Link>
           </div>
         </div>
+
+        <div className="mt-10">
+          <h2 className="text-xl font-semibold mb-4">
+            <span className="underline">Gallery</span>
+          </h2>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="relative w-full h-[600px]">
+              <Image
+                src="/game-1.jpg"
+                alt="Territories Image"
+                fill
+                className="rounded shadow-lg shadow-gray-600"
+              />
+            </div>
+            <div className="relative w-full h-[600px]">
+              <Image
+                src="/game-2.jpg"
+                alt="Territories Image"
+                fill
+                className="rounded shadow-lg shadow-gray-600"
+              />
+            </div>
+          </div>
+          <div className="mt-8 rounded border shadow-md">
+            <video controls className="w-full aspect-video">
+              <source src="/panorama.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </MaxWidthWrapper>
     </>
   );
