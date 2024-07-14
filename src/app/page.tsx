@@ -186,6 +186,11 @@ export default function Home() {
             ))}
           </ul>
         </div>
+        <div className="flex flex-row w-full items-center justify-center pt-10">
+          <Link href="/contribution">
+            <Button variant={"secondary"}>View contributions &rarr;</Button>
+          </Link>
+        </div>
       </section>
     </>
   );
