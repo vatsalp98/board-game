@@ -360,7 +360,7 @@ export default function Home() {
             </div>
           </div>
           <Image
-            src="/flowchart.jpg"
+            src="/flowchart.png"
             width={1200}
             height={1200}
             alt="Hero"
