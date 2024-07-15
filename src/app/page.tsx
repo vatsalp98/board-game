@@ -124,7 +124,7 @@ export default function Home() {
               Our 3 Game Pillars
             </h1>
             <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-              This section outlines the core principles guiding the game's
+              This section outlines the core principles guiding the game&apos;s
               design and development. Each pillar, summarized in one sentence,
               captures the essence of what the game is about, how it is played,
               and why it offers a compelling experience.
@@ -182,7 +182,7 @@ export default function Home() {
               This section delves into the thematic backstory of the game,
               introducing the characters, the story world, and the premise of
               the action. It sets the stage for the gameplay by providing
-              context and depth to the game's narrative.
+              context and depth to the game&apos;s narrative.
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
@@ -276,8 +276,8 @@ export default function Home() {
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 This section provides minutes and summaries of each group
                 meeting, capturing key discussions, decisions, and action items.
-                The first page of each meeting's minutes is included to give a
-                snapshot of our collaborative process.
+                The first page of each meeting&apos;s minutes is included to
+                give a snapshot of our collaborative process.
               </p>
             </div>
             <Link
