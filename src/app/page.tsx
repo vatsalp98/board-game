@@ -411,7 +411,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
             <Link
-              href="/dynamics"
+              href="/tradeoff"
               className={buttonVariants({
                 variant: "default",
                 className: "rounded-sm h-10 px-8",
