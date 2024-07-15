@@ -432,7 +432,7 @@ export default function Home() {
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl ">
               <strong>
-                The Royal Ascension plays for 60-90 minutes on average.
+                The Royal Ascension plays for 60-90 minutes on average.{" "}
               </strong>
               The length of time can change based on how many people are
               playing, how experienced they are, and what tactics they use.
