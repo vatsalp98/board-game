@@ -91,29 +91,57 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <div className="max-w-4xl mx-auto space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Contextualization of the Game
-            </h1>
-            <p className="text-muted-foreground text-lg md:text-xl ">
-              Mario Party serves as The Royal Ascension&apos;s primary source of
-              inspiration, as it incorporates key components like strategy,
-              turn-based gameplay, and randomness. Our goal was to imitate the
-              dynamic game area found in Mario Party, where each place
-              represents a distinct event that is brought about by a chance card
-              draw, much like how Mario Party has spaces that activate games or
-              induce advantage by giving rewards. The game also draws
-              inspiration from the ideas of cartomancy, in which every card has
-              a distinct meaning that affects how the game plays out. Combining
-              these various sources of inspiration results in a highly
-              unpredictable and strategically deep game world where players must
-              successfully negotiate alliances, conflicts, and political
-              intrigue in order to gain control of the kingdom.
-            </p>
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+            <div className="flex flex-col justify-center space-y-4">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  Inspiration
+                </h1>
+                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                  Mario Party serves as The Royal Ascension&apos;s primary
+                  source of inspiration, as it incorporates key components like
+                  strategy, turn-based gameplay, and randomness. Our goal was to
+                  imitate the dynamic game area found in Mario Party, where each
+                  place represents a distinct event that is brought about by a
+                  chance card draw, much like how Mario Party has spaces that
+                  activate games or induce advantage by giving rewards. The game
+                  also draws inspiration from the ideas of cartomancy, in which
+                  every card has a distinct meaning that affects how the game
+                  plays out. Combining these various sources of inspiration
+                  results in a highly unpredictable and strategically deep game
+                  world where players must successfully negotiate alliances,
+                  conflicts, and political intrigue in order to gain control of
+                  the kingdom.
+                </p>
+              </div>
+            </div>
+            <div className="gap-2">
+              <Image
+                src="/inspiration.jpg"
+                width="550"
+                height="550"
+                alt="Hero"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
+              <span className="text-muted-foreground">
+                https://www.pinterest.ca/pin/686306430728383091/
+              </span>
+              <Image
+                src="/inspiration.png"
+                width="550"
+                height="550"
+                alt="Hero"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last mt-2"
+              />
+              <span className="text-muted-foreground">
+                https://tarotgarden.com/french-cartomancy/
+              </span>
+            </div>
           </div>
         </div>
       </section>
+
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 space-y-10">
           <div className="text-center space-y-4">
@@ -240,14 +268,15 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
             <Link
-              href="/rules"
+              target="_blank"
+              href="/Rulebook.pdf"
               className={buttonVariants({
                 variant: "default",
                 className: "rounded-sm h-10 px-8",
               })}
               prefetch={false}
             >
-              View Rules &rarr;
+              Get Rulebook &rarr;
             </Link>
           </div>
         </div>
