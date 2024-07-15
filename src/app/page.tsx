@@ -51,64 +51,339 @@ const people = [
 export default function Home() {
   return (
     <>
-      <MaxWidthWrapper>
-        <div className="py-40 mx-auto text-center flex flex-col items-center max-w-3xl h-screen">
-          <Vortex
-            backgroundColor="slate"
-            rangeY={800}
-            className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-[25vh]"
-          >
-            <section className="mt-[250px] flex flex-col items-center justify-center py-20">
-              <h2 className="text-white text-4xl md:text-6xl font-bold text-center">
-                The Royal Ascension
-              </h2>
-              <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-                Where strategy, alliances, and cunning will lead you to the
-                throne!
-              </p>
-              <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-                <Link href={"/board"}>
-                  <Button className="gap-2" variant={"secondary"}>
-                    <DownloadIcon />
-                    Game Components
-                  </Button>
-                </Link>
-                <Link href={"/rules"}>
-                  <Button variant={"secondary"} className="gap-2">
-                    <QuestionMarkIcon />
-                    Rulebook
-                  </Button>
-                </Link>
-                <Dialog>
-                  <DialogTrigger
-                    className={buttonVariants({
-                      variant: "secondary",
-                      className: "gap-2",
-                    })}
-                  >
-                    <PlayIcon />
-                    Watch Trailer
-                  </DialogTrigger>
-                  <DialogContent>
-                    <DialogHeader>
-                      <DialogTitle>Royal Ascension Trailer</DialogTitle>
-                      <DialogDescription>
-                        Here is a small trailer introducing our board game.
-                      </DialogDescription>
-                    </DialogHeader>
-                    <div className="py-4 relative">
-                      <iframe
-                        src="https://www.youtube.com/embed/IdWoTVZqQzE"
-                        className="w-full fill h-[600px]"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </div>
-            </section>
-          </Vortex>
+      <section className="relative w-full py-32 md:py-40 lg:py-48">
+        <div className="absolute inset-0 bg-[url('/board_img.jpg')] bg-cover bg-center bg-no-repeat after:absolute after:inset-0 after:bg-black after:opacity-70" />
+        <div className="relative container mx-auto px-4 text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+            The Royal Ascension
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-gray-300">
+            The Royal Ascension, a strategic board game where players engage in
+            battles, form alliances, and navigate political intrigue to conquer
+            territories and ascend to the throne.
+          </p>
         </div>
-      </MaxWidthWrapper>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container grid gap-10 px-4 md:px-6 lg:grid-cols-2">
+          <div className="space-y-4">
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+              Video Trailer
+            </div>
+            <h2 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
+              Introducing our game
+            </h2>
+            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
+              Check out our new video showcasing the key features of our board
+              game.
+            </p>
+          </div>
+          <div className="rounded-lg border">
+            <iframe
+              src="https://www.youtube.com/embed/IdWoTVZqQzE"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full aspect-video"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <div className="max-w-3xl mx-auto space-y-4">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+              Contextualization of the Game
+            </h1>
+            <p className="text-muted-foreground text-lg md:text-xl ">
+              Mario Party serves as The Royal Ascension&apos;s primary source of
+              inspiration, as it incorporates key components like strategy,
+              turn-based gameplay, and randomness. Our goal was to imitate the
+              dynamic game area found in Mario Party, where each place
+              represents a distinct event that is brought about by a chance card
+              draw, much like how Mario Party has spaces that activate games or
+              induce advantage by giving rewards. The game also draws
+              inspiration from the ideas of cartomancy, in which every card has
+              a distinct meaning that affects how the game plays out. Combining
+              these various sources of inspiration results in a highly
+              unpredictable and strategically deep game world where players must
+              successfully negotiate alliances, conflicts, and political
+              intrigue in order to gain control of the kingdom.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6 space-y-10">
+          <div className="text-center space-y-4">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+              Our 3 Game Pillars
+            </h1>
+            <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
+              Overview of our 3 main game pillars.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="p-6 rounded-lg bg-card shadow-sm">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="bg-primary rounded-md p-3 flex items-center justify-center">
+                  <QuestionMarkIcon className="h-6 w-6 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold">What</h3>
+              </div>
+              <p className="text-muted-foreground">
+                The Royal Ascension is a turn-based strategy board game centered
+                on kingdom domination.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg bg-card shadow-sm">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="bg-primary rounded-md p-3 flex items-center justify-center">
+                  <QuestionMarkIcon className="h-6 w-6 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold">How</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Players use cards and dice to navigate random events, form
+                alliances, and engage in battles.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg bg-card shadow-sm">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="bg-primary rounded-md p-3 flex items-center justify-center">
+                  <QuestionMarkIcon className="h-6 w-6 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold">Why</h3>
+              </div>
+              <p className="text-muted-foreground">
+                The game is designed to challenge player&apos;s strategic
+                thinking and adaptability in a dynamic, unpredictable
+                environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6 space-y-6 text-center">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              Thematic Backstory
+            </h1>
+            <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl lg:text-lg">
+              Discover our characters, story world, premise of the action etc.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+            <Link
+              href="/story"
+              className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              prefetch={false}
+            >
+              Read Story &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+            <div className="flex flex-col justify-center space-y-4">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  Game Components
+                </h1>
+                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                  Discover all the game components used in our board game to
+                  make it come alive.
+                </p>
+              </div>
+              <Link
+                href="/board"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                prefetch={false}
+              >
+                View Components
+              </Link>
+            </div>
+            <Image
+              src="/game-1.jpg"
+              width="550"
+              height="550"
+              alt="Hero"
+              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6 space-y-6 text-center">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              The Rulebook
+            </h1>
+            <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl lg:text-lg">
+              Start here by reading all the rules related to the game, from
+              setting up to winning the game.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+            <Link
+              href="/rules"
+              className={buttonVariants({
+                variant: "default",
+                className: "rounded-sm h-10 px-8",
+              })}
+              prefetch={false}
+            >
+              View Rules &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+          <Image
+            src="/group.jpg"
+            width="450"
+            height="450"
+            alt="Hero"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+          />
+          <div className="flex flex-col justify-center space-y-4">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none">
+                Group Meeting Log
+              </h1>
+              <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                Overview of all the meeting minutes throughout the semester to
+                realise the board game.
+              </p>
+            </div>
+            <Link
+              href="/group"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              prefetch={false}
+            >
+              View Group log &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+              Playtesting Log
+            </h1>
+            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Discover everything we learned during our playtesting session.
+            </p>
+            <Link
+              target="_blank"
+              href="/meeting_log.pdf"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              prefetch={false}
+            >
+              View playtesting Log &rarr;
+            </Link>
+          </div>
+          <div className="flex justify-end">
+            <Image
+              src="/playtest.jpg"
+              width="550"
+              height="310"
+              alt="Hero"
+              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full pt-12 md:pt-24 lg:pt-32">
+        <div className="container space-y-10 xl:space-y-16">
+          <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+                Flowchart
+              </h1>
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                Discover the power of our intuitive design tools and bring your
+                ideas to life.
+              </p>
+            </div>
+          </div>
+          <Image
+            src="/flowchart.jpg"
+            width={1200}
+            height={1200}
+            alt="Hero"
+            className="mx-auto aspect-auto overflow-hidden rounded-xl object-cover"
+          />
+        </div>
+      </section>
+      {/* <MaxWidthWrapper>
+        <div className="py-40 text-center flex flex-col items-center w-full h-screen">
+          <section className="flex flex-col items-center justify-center py-20 bg-[url('/board_img.jpg')] bg-contain bg-no-repeat w-full brightness-50">
+            <h2 className="text-white text-4xl md:text-6xl font-bold text-center">
+              The Royal Ascension
+            </h2>
+            <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
+              The Royal Ascension, a strategic board game where players engage
+              in battles, form alliances, and navigate political intrigue to
+              conquer territories and ascend to the throne.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
+              <Link href={"/board"}>
+                <Button className="gap-2" variant={"secondary"}>
+                  <DownloadIcon />
+                  Game Components
+                </Button>
+              </Link>
+              <Link href={"/rules"}>
+                <Button variant={"secondary"} className="gap-2">
+                  <QuestionMarkIcon />
+                  Rulebook
+                </Button>
+              </Link>
+              <Dialog>
+                <DialogTrigger
+                  className={buttonVariants({
+                    variant: "secondary",
+                    className: "gap-2",
+                  })}
+                >
+                  <PlayIcon />
+                  Watch Trailer
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>Royal Ascension Trailer</DialogTitle>
+                    <DialogDescription>
+                      Here is a small trailer introducing our board game.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="py-4 relative">
+                    <iframe
+                      src="https://www.youtube.com/embed/IdWoTVZqQzE"
+                      className="w-full fill h-[600px]"
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
+            </div>
+          </section>
+        </div>
+      </MaxWidthWrapper> */}
 
       {/* <section className="w-full py-8 md:py-14 border-t border-b">
         <div className="container px-4 md:px-6">

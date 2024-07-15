@@ -94,7 +94,7 @@ export default function ContributionPage() {
                 <h2 className="text-lg font-bold">Joseph</h2>
                 <ul className="list-disc list-inside mt-2">
                   <li className="">12 Territory cards (100%)</li>
-                  <li className="">Flowchar (100%)</li>
+                  <li className="">Flowchart (100%)</li>
                   <li className="font-bold">Map (10%) </li>
                   <li className="italic">Visual Gallery (25%)</li>
                 </ul>
