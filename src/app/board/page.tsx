@@ -83,7 +83,7 @@ export default function BoardPage() {
         </div>
         <div className="mt-10">
           <h2 className="text-xl font-semibold mb-4">
-            <span className="underline">Teritorries Cards</span> 🎴
+            <span className="underline">Territory Cards</span> 🎴
           </h2>
           <div className="relative w-full h-[900px]">
             <Image
