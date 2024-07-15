@@ -75,8 +75,8 @@ export default function Home() {
               Introducing our game
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-              Check out our new video showcasing the key features of our board
-              game.
+              Watch the trailer to get a quick overview of the adventure and
+              excitement that awaits.
             </p>
           </div>
           <div className="rounded-lg border">
@@ -124,7 +124,10 @@ export default function Home() {
               Our 3 Game Pillars
             </h1>
             <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-              Overview of our 3 main game pillars.
+              This section outlines the core principles guiding the game's
+              design and development. Each pillar, summarized in one sentence,
+              captures the essence of what the game is about, how it is played,
+              and why it offers a compelling experience.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -176,7 +179,10 @@ export default function Home() {
               Thematic Backstory
             </h1>
             <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl lg:text-lg">
-              Discover our characters, story world, premise of the action etc.
+              This section delves into the thematic backstory of the game,
+              introducing the characters, the story world, and the premise of
+              the action. It sets the stage for the gameplay by providing
+              context and depth to the game's narrative.
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
@@ -200,8 +206,11 @@ export default function Home() {
                   Game Components
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Discover all the game components used in our board game to
-                  make it come alive.
+                  This section features a visual gallery showcasing all the game
+                  components other than the main playing board, such as cards,
+                  dice, and player pieces. These visuals, some of which are
+                  generated using AI platforms, provide a detailed look at the
+                  elements that bring the game to life.
                 </p>
               </div>
               <Link
@@ -230,8 +239,9 @@ export default function Home() {
               The Rulebook
             </h1>
             <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl lg:text-lg">
-              Start here by reading all the rules related to the game, from
-              setting up to winning the game.
+              This section contains the comprehensive rule book for the game,
+              outlining all the rules, objectives, and gameplay mechanics
+              necessary for players to fully understand and enjoy the game.
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
@@ -264,8 +274,10 @@ export default function Home() {
                 Group Meeting Log
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Overview of all the meeting minutes throughout the semester to
-                realise the board game.
+                This section provides minutes and summaries of each group
+                meeting, capturing key discussions, decisions, and action items.
+                The first page of each meeting's minutes is included to give a
+                snapshot of our collaborative process.
               </p>
             </div>
             <Link
@@ -286,7 +298,10 @@ export default function Home() {
               Playtesting Log
             </h1>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Discover everything we learned during our playtesting session.
+              This section documents the insights gained during playtesting and
+              details the revisions made to the game based on these findings. It
+              highlights specific feedback from testers and the adjustments
+              implemented to enhance gameplay
             </p>
             <Link
               target="_blank"
@@ -317,8 +332,11 @@ export default function Home() {
                 Flowchart
               </h1>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Discover the power of our intuitive design tools and bring your
-                ideas to life.
+                This section presents flowcharts that illustrate the primary
+                game mechanics as a logical structure tree. Referencing the
+                Flowchart lecture from Week 11, these diagrams provide a clear,
+                visual representation of how different elements and actions
+                within the game interact.
               </p>
             </div>
           </div>
@@ -329,6 +347,34 @@ export default function Home() {
             alt="Hero"
             className="mx-auto aspect-auto overflow-hidden rounded-xl object-cover"
           />
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6 space-y-6 text-center">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              Quantitative Analysis
+            </h1>
+            <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl lg:text-lg">
+              This section delves into the quantitative aspects of game balance,
+              examining how probabilities and various design factors contribute
+              to achieving a balanced outcome. It explores statistical methods
+              and models used to ensure fairness and enjoyment for all players
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+            <Link
+              href="/rules"
+              className={buttonVariants({
+                variant: "default",
+                className: "rounded-sm h-10 px-8",
+              })}
+              prefetch={false}
+            >
+              Read Analysis &rarr;
+            </Link>
+          </div>
         </div>
       </section>
       {/* <MaxWidthWrapper>
