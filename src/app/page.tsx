@@ -377,6 +377,34 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6 space-y-6 text-center">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              Game Dynamics
+            </h1>
+            <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl lg:text-lg">
+              This section explores the main game dynamics, including successful
+              strategies that have emerged through gameplay. It highlights key
+              tactics and approaches that players can employ to achieve
+              strategic advantages and navigate challenges effectively.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+            <Link
+              href="/dynamics"
+              className={buttonVariants({
+                variant: "default",
+                className: "rounded-sm h-10 px-8",
+              })}
+              prefetch={false}
+            >
+              View game Dynamics &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
       {/* <MaxWidthWrapper>
         <div className="py-40 text-center flex flex-col items-center w-full h-screen">
           <section className="flex flex-col items-center justify-center py-20 bg-[url('/board_img.jpg')] bg-contain bg-no-repeat w-full brightness-50">

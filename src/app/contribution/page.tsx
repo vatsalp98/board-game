@@ -38,8 +38,7 @@ export default function ContributionPage() {
                 <h2 className="text-lg font-bold">Clement</h2>
                 <ul className="list-disc list-inside mt-2">
                   <li className="font-semibold">Rules and Rulebook (60%)</li>
-                  <li className="italic">Thematic backstory (20%)</li>
-                  <li>Contributions (25%)</li>
+                  <li>Contributions (20%)</li>
                   <li className="font-bold">Group Meeting Log (50%) </li>
                   <li>Play session duration explanation (100%)</li>
                   <li>
@@ -48,7 +47,7 @@ export default function ContributionPage() {
                       <li className="italic">Core Statement (100%)</li>
                       <li className="italic">Game Pillars (100%)</li>
                       <li className="font-bold">Quantitative analysis (50%)</li>
-                      <li className="font-bold">Dynamics (50%)</li>
+                      <li className="">Dynamics (100%)</li>
                     </ul>
                   </li>
                 </ul>
@@ -60,7 +59,7 @@ export default function ContributionPage() {
                 <h2 className="text-lg font-bold">Justin</h2>
                 <ul className="list-disc list-inside mt-2">
                   <li className="font-semibold">Rules and Rulebook (40%)</li>
-                  <li>Contributions (25%)</li>
+                  <li>Contributions (20%)</li>
                   <li className="font-bold">Group Meeting Log (50%) </li>
                   <li>
                     <strong>Required writings: </strong>
@@ -70,7 +69,6 @@ export default function ContributionPage() {
                         similar games we drew inspiration from (100%)
                       </li>
                       <li className="font-bold">Quantitative analysis (50%)</li>
-                      <li className="font-bold">Dynamics (50%)</li>
                       <li className="italic">Trade offs (100%)</li>
                     </ul>
                   </li>
@@ -83,10 +81,10 @@ export default function ContributionPage() {
                 <h2 className="text-lg font-bold">Roan</h2>
                 <ul className="list-disc list-inside mt-2">
                   <li className="font-semibold">Map (90%)</li>
-                  <li>Contributions (25%)</li>
+                  <li>Contributions (20%)</li>
                   <li className="italic">4 Character tokens (100%)</li>
                   <li className="">Playtest log (100%) </li>
-                  <li className="italic">Thematic backstory (80%)</li>
+                  <li className="italic">Thematic backstory (100%)</li>
                   <li className="italic">Visual Gallery (75%)</li>
                 </ul>
               </div>
@@ -99,7 +97,7 @@ export default function ContributionPage() {
                   <li className="">12 Territory cards (100%)</li>
                   <li className="">Flowchart (100%)</li>
                   <li className="font-bold">Map (10%) </li>
-                  <li>Contributions (25%)</li>
+                  <li>Contributions (20%)</li>
                   <li>Key (100%)</li>
                   <li className="italic">Visual Gallery (25%)</li>
                 </ul>
@@ -113,6 +111,7 @@ export default function ContributionPage() {
                   <li className="font-bold">Website (100%)</li>
                   <li className="font-bold">Trailer (100%)</li>
                   <li className="font-bold">Final Editing (100%)</li>
+                  <li>Contributions (20%)</li>
                 </ul>
               </div>
             </div>
