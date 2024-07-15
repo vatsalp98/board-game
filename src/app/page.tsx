@@ -94,7 +94,7 @@ export default function Home() {
 
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <div className="max-w-3xl mx-auto space-y-4">
+          <div className="max-w-4xl mx-auto space-y-4">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               Contextualization of the Game
             </h1>
@@ -305,7 +305,7 @@ export default function Home() {
             </p>
             <Link
               target="_blank"
-              href="/meeting_log.pdf"
+              href="/playtesting_log.pdf"
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}
             >
@@ -333,10 +333,9 @@ export default function Home() {
               </h1>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                 This section presents flowcharts that illustrate the primary
-                game mechanics as a logical structure tree. Referencing the
-                Flowchart lecture from Week 11, these diagrams provide a clear,
-                visual representation of how different elements and actions
-                within the game interact.
+                game mechanics as a logical structure tree. These diagrams
+                provide a clear, visual representation of how different elements
+                and actions within the game interact.
               </p>
             </div>
           </div>
@@ -365,7 +364,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
             <Link
-              href="/rules"
+              target="_blank"
+              href="/analysis.pdf"
               className={buttonVariants({
                 variant: "default",
                 className: "rounded-sm h-10 px-8",

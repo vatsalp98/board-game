@@ -39,7 +39,7 @@ export default function GroupMeetingPage() {
             </div>
             <div className="my-6">
               <h2 className="font-semibold">Meeting Minutes #1:</h2>
-              <span className="font-semibold">Time: 1Hour</span>
+              <span className="font-semibold">Time: 1 Hour</span>
               <ul className="list-disc list-inside">
                 <li>
                   <strong>Tasks to split in the future:</strong>
@@ -82,7 +82,7 @@ export default function GroupMeetingPage() {
             <hr className="h-2" />
             <div className="my-6 flex flex-col">
               <h2 className="font-semibold">Meeting Minutes #2:</h2>
-              <span className="font-semibold">Time: 1Hour</span>
+              <span className="font-semibold">Time: 1 Hour</span>
               <strong>Decisions and Ideas</strong>
               <ul className="list-disc list-inside">
                 <li>
@@ -130,7 +130,7 @@ export default function GroupMeetingPage() {
             <hr className="h-2" />
             <div className="my-6 flex flex-col">
               <h2 className="font-semibold">Meeting Minutes #3:</h2>
-              <span className="font-semibold">Time: 1Hour</span>
+              <span className="font-semibold">Time: 1 Hour</span>
 
               <ul className="list-disc list-inside">
                 <li>Medieval Kingdom theme. </li>
@@ -160,7 +160,7 @@ export default function GroupMeetingPage() {
             <hr className="h-2" />
             <div className="my-6 flex flex-col">
               <h2 className="font-semibold">Meeting Minutes #4:</h2>
-              <span className="font-semibold">Time: 1Hour</span>
+              <span className="font-semibold">Time: 1 Hour</span>
 
               <ul className="list-disc list-inside">
                 <li>Discussed the Figma doc </li>
@@ -217,7 +217,7 @@ export default function GroupMeetingPage() {
             <hr className="h-2" />
             <div className="my-6 flex flex-col">
               <h2 className="font-semibold">Meeting Minutes #6:</h2>
-              <span className="font-semibold">Time: 3Hours</span>
+              <span className="font-semibold">Time: 3 Hours</span>
 
               <ul className="list-disc list-inside">
                 <li>
@@ -267,7 +267,7 @@ export default function GroupMeetingPage() {
             <hr className="h-2" />
             <div className="my-6 flex flex-col">
               <h2 className="font-semibold">Meeting Minutes #7:</h2>
-              <span className="font-semibold">Time: 3Hours</span>
+              <span className="font-semibold">Time: 3 Hours</span>
 
               <ul className="list-disc list-inside">
                 <li>

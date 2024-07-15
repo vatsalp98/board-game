@@ -111,6 +111,34 @@ export default function BoardPage() {
 
         <div className="mt-10">
           <h2 className="text-xl font-semibold mb-4">
+            <span className="underline">Key</span> 🔑
+          </h2>
+          <div className="relative w-full h-[900px]">
+            <Image
+              src="/key.jpg"
+              alt="Territories Image"
+              fill
+              className="rounded shadow-lg shadow-gray-600"
+            />
+          </div>
+          <div className="mt-6 justify-end w-full flex flex-row gap-4">
+            <Link href="/key.jpg" target="_blank">
+              <Button variant={"secondary"} className="gap-2">
+                <DownloadIcon />
+                Download Image
+              </Button>
+            </Link>
+            <Link href={"/key.pdf"} target="_blank">
+              <Button variant={"secondary"} className="gap-2">
+                <DownloadIcon />
+                Download PDF
+              </Button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h2 className="text-xl font-semibold mb-4">
             <span className="underline">Gallery</span>
           </h2>
           <div className="grid grid-cols-2 gap-4">
