@@ -64,7 +64,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container grid gap-10 px-4 md:px-6 lg:grid-cols-2">
           <div className="space-y-4">
@@ -91,7 +90,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <div className="max-w-4xl mx-auto space-y-4">
@@ -116,7 +114,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 space-y-10">
           <div className="text-center space-y-4">
@@ -171,7 +168,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 space-y-6 text-center">
           <div className="space-y-4">
@@ -196,7 +192,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
@@ -231,7 +226,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 space-y-6 text-center">
           <div className="space-y-4">
@@ -258,7 +252,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_550px]">
           <Image
@@ -290,7 +283,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <div className="space-y-4">
@@ -323,7 +315,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full pt-12 md:pt-24 lg:pt-32">
         <div className="container space-y-10 xl:space-y-16">
           <div className="flex flex-col items-center space-y-4 text-center">
@@ -348,7 +339,6 @@ export default function Home() {
           />
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 space-y-6 text-center">
           <div className="space-y-4">
@@ -377,7 +367,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 space-y-6 text-center">
           <div className="space-y-4">
@@ -405,6 +394,59 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6 space-y-6 text-center">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              Trade-offs & Dilemas
+            </h1>
+            <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl lg:text-lg">
+              This section delves into the trade-offs and dilemmas that emerge
+              during gameplay, challenging players to make tough decisions that
+              impact their strategy and outcomes. It explores the complexities
+              of balancing risk and reward, resource allocation, and
+              prioritization to succeed in the game.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+            <Link
+              href="/dynamics"
+              className={buttonVariants({
+                variant: "default",
+                className: "rounded-sm h-10 px-8",
+              })}
+              prefetch={false}
+            >
+              View trade-offs &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <div className="max-w-4xl mx-auto space-y-4">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+              Play Session Duration
+            </h1>
+            <p className="text-muted-foreground text-lg md:text-xl ">
+              <strong>
+                The Royal Ascension plays for 60-90 minutes on average.
+              </strong>
+              The length of time can change based on how many people are
+              playing, how experienced they are, and what tactics they use.
+              Sessions for a three versus a four-player game will vary as
+              participants will engage in complicated political maneuvering,
+              forge alliances, and fight in complex warfare. Because of the
+              game&apos;s dynamic and unexpected nature, which is influenced by
+              both strategic choices and chance events, every session promises
+              to be interesting and different.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* <MaxWidthWrapper>
         <div className="py-40 text-center flex flex-col items-center w-full h-screen">
           <section className="flex flex-col items-center justify-center py-20 bg-[url('/board_img.jpg')] bg-contain bg-no-repeat w-full brightness-50">
@@ -458,7 +500,6 @@ export default function Home() {
           </section>
         </div>
       </MaxWidthWrapper> */}
-
       {/* <section className="w-full py-8 md:py-14 border-t border-b">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-2 text-center">
@@ -492,7 +533,6 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-
       <section
         id="open-source"
         className="container space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32"
